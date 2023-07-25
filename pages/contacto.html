@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicias Gourmet</title>
+</head>
+<body>
+    <a href="" class="fijo">
+        <img src="../img/icon-whatsapp.png" alt="whatsapp">
+    </a>
+    <header>
+        <div>
+            <img width="100px" height="100px" src="../img/logo.png" alt="logo">              
+        </div>
+        <nav class="nav_desk">
+            <ul>   
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./pasteles-y-reposteria.html">Pasteles y Repostería</a></li>
+                <li><a href="./gourmet.html">Gourmet</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menú
+            </button>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./pasteles-y-reposteria.html">Pasteles y Repostería</a></li>
+                <li><a href="./gourmet.html">Gourmet</a></li>
+            </ul>
+        </div>
+    </header>
+    <hr/>
+    <main>
+            <div class="formulario">
+                <h3>Contacto</h3>
+                <form action="#">
+            
+                    <label for="nombres">Nombres:
+                        <input type="text" name="nombres" placeholder="Ej:Oscar Manuel "> <br>
+                    </label><br>
+            
+                    <label for="apellidos">Apellido:
+                        <input type="text" name="apellido" placeholder="Ej:López Mojica"><br>
+                    </label><br>
+            
+                    <label for="correo">E-mail:
+                        <input type="text" name="correo" placeholder="Ej:lopezoscarmanolo@gmail.com"><br>
+                    </label><br>
+            
+                    <label for="edad">Edad:
+                        <input type="number" name="edad" placeholder="Edad"><br>
+                    </label><br>
+            
+                    <textarea class="textinput" placeholder="Comentarios"></textarea><br>
+            
+                    <fieldset class="calificacion">
+            
+                        <legend>¿Como calificas la pagina?<abbr title="Este campo es obligatorio" aria-label="required"> *</abbr>
+                        </legend>
+                        <br>
+                        <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Excelente</label>
+                        <input type="radio" required name="driver" id="r2" value="no"><label for="r2">Buena</label>
+                        <input type="radio" required name="driver" id="r2" value="no"><label for="r2">Regular</label>
+                        <input type="radio" required name="driver" id="r2" value="no"><label for="r2">Mala</label>
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear">
+                </form>
+            </div>
+    </main>
+    <hr/>
+    <footer>
+        <div class="footer">
+            <div>
+                <img width="100px" height="100px" src="../img/logo.png" alt="logo">              
+            </div>
+            <div>
+                <p>Tienda: Bo. Cuba Puente León 2 cuadras al norte</p>
+                <span>Correo:<a href="mailto:lopezoscarmanolo@gmail.com" target="_blank">lopezoscarmanolo@gmail.com</a></span>
+                <p>Lun-Sáb 9:00am - 4:00pm</p>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.382542763191!2d-86.27267997141283!3d12.151790346212842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f715613d2dde17b%3A0x5c9d15d62d26ec2c!2sEstadio%20Infantil%20Roberto%20Clemente!5e0!3m2!1ses!2sni!4v1690228805744!5m2!1ses!2sni" width="250" height="100" style="border: 1px solid black;" a></iframe>
+            </div>        
+            <div>
+                <p>Siguenos en:</p>
+                <img src="../img/icon-facebook.png" alt="facebook">
+                <img src="../img/icon-instagram.png" alt="instagram">
+                <img src="../img/icon-LinkedIn.png" alt="LinkedIn">
+                <img src="../img/icon-twitter.png" alt="twitter">
+                <img src="../img/icon-youtube.png" alt="youtube">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
