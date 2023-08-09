@@ -1,0 +1,23 @@
+footer {
+    background-color: #FFFACD;
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        div{
+            p{
+                margin: 0;
+            }
+        }
+        div{
+            iframe{
+                margin: 3px;
+            }
+        }
+    }
+}
