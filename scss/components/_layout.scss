@@ -11,13 +11,10 @@ main {
         justify-content: space-around;
         align-items: center;
         .productos{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flexbox (flex,column,center,center);
             width: 400px;
             height: 400px;
-            border: 1px solid black;
+            border: 1px solid $color-a;
             border-radius: 5px;
             box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
             -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
@@ -29,13 +26,13 @@ main {
             }
             a{
                 text-decoration: none;
-                color: black;
+                color: $color-a;
                 font-weight: 700;
                 border-radius: 5px;
                 padding: 5px;
-                border: 1px solid black;
+                border: 1px solid $color-a;
                 &:hover {
-                    background-color: #FFB6C1;
+                    background-color: $color-hover;
                     font-weight: 700;
                 }
             }
@@ -46,7 +43,7 @@ main {
         .espaciado_contacto {
             padding: 25px;
             .escribenos {
-                color: #008866;
+                color: $color-span;
                 font-size: 35px;
                 text-decoration: none;
             }
@@ -62,12 +59,9 @@ main {
         width: 100%;
         max-width: 500px;
         margin: 5px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexbox (flex,column,center,center);
         padding: 5px;
-        background-color: #87CEFA;
+        background-color: $color-background-form;
         border-radius: 10px;
         form{
             .textinput{
@@ -76,32 +70,26 @@ main {
                 min-height: 75px;
                 outline: none;
                 resize: none;
-                border: 1px solid grey;
+                border: 1px solid $color-form-letter;
             }
         }
     }
     .parallax {
         width: 100%;
-        height: calc(100vh);
         background-image: url(../img/pastelera.jpeg);
         background-attachment: fixed;
         background-position: revert;
         background-repeat: no-repeat;
         background-size: cover;
         .historia{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
+            @include flexbox (flex,row,space-around,center);
             .presentacion{
                 width: 45%;
                 padding: 10px;
-                color: white;
+                color: $color-basic-letter;
                 line-height: 2rem;
                 font-size: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flexbox (flex,column,center,center);
                 img{
                     width: 40%;
                     border-radius: 15px;
@@ -110,24 +98,18 @@ main {
         }
     }
     .grid{
-        display: grid;
+        @include grid (grid,center,center,center);
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
         column-gap: 5px;
         row-gap: 15px;
-        justify-items: center;
-        align-items: center;
         justify-content: center;
-        align-content: center;
         padding: 10px;
         .contenedor{
             width: 350px;
             height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid black;
+            @include flexbox (flex,column,center,center);
+            border: 1px solid $color-a;
             border-radius: 5px;
             box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
             -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
@@ -142,10 +124,10 @@ main {
                 font-weight: 700;
                 border-radius: 5px;
                 padding: 5px;
-                border: 1px solid black;
+                border: 1px solid $color-a;
                 margin: 5px;
                 &:hover{
-                    background-color: #ffb6c1;
+                    background-color: $color-hover;
                     font-weight: 700;
                 }
             }
@@ -159,7 +141,7 @@ main {
         .row {
             div {
                 margin: 0;
-                border: 1px solid black;
+                border: 1px solid $color-a;
                 border-radius: 5px;
                 box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
                 -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);

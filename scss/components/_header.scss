@@ -2,7 +2,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #FFFACD;
+    background-color: $color-header-footer;
     div{    
         img{
             width:100px; 
@@ -10,14 +10,10 @@ header {
         }
     }
     .nav_desk {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flexbox (flex,row,center,center);
+
         ul{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexbox (flex,row,center,center);
             margin: 0;
             li{
                 list-style: none;
@@ -25,12 +21,23 @@ header {
                     text-decoration: none;
                     padding: 10px;
                     font-size: 20px;
-                    color: black;
+                    color: $color-a;
                 }
             }
         }
     }
-    .dropdown{
+    .nav-movil{
         display: none; 
+        ul{
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    padding: 10px;
+                    font-size: 20px;
+                    color: $color-a;  
+                }
+            }
+        }
     }
 }  

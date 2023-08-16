@@ -40,6 +40,7 @@ header {
     align-items: center; }
     header .nav_desk ul {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       margin: 0; }
@@ -50,8 +51,15 @@ header {
           padding: 10px;
           font-size: 20px;
           color: black; }
-  header .dropdown {
+  header .nav-movil {
     display: none; }
+    header .nav-movil ul li {
+      list-style: none; }
+      header .nav-movil ul li a {
+        text-decoration: none;
+        padding: 10px;
+        font-size: 20px;
+        color: black; }
 
 main h1 {
   text-align: center;
@@ -126,7 +134,6 @@ main .formulario {
 
 main .parallax {
   width: 100%;
-  height: calc(100vh);
   background-image: url(../img/pastelera.jpeg);
   background-attachment: fixed;
   background-position: revert;
@@ -145,6 +152,7 @@ main .parallax {
       font-size: 20px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center; }
       main .parallax .historia .presentacion img {
         width: 40%;
@@ -152,14 +160,14 @@ main .parallax {
 
 main .grid {
   display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   column-gap: 5px;
   row-gap: 15px;
-  justify-items: center;
-  align-items: center;
   justify-content: center;
-  align-content: center;
   padding: 10px; }
   main .grid .contenedor {
     width: 350px;
@@ -185,7 +193,7 @@ main .grid {
       border: 1px solid black;
       margin: 5px; }
       main .grid .contenedor .boton_compra:hover {
-        background-color: #ffb6c1;
+        background-color: #FFB6C1;
         font-weight: 700; }
 
 main .container {
@@ -215,9 +223,15 @@ footer {
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto; }
+    footer .footer div .img-logo {
+      width: 100px;
+      height: 100px; }
     footer .footer div p {
       margin: 0; }
     footer .footer div iframe {
+      width: 250px;
+      height: 100px;
+      border: 1px solid black;
       margin: 3px; }
 
 @media screen and (max-width: 420px) {
@@ -231,8 +245,12 @@ footer {
     justify-content: space-around; }
     header .nav_desk {
       display: none; }
-    header .dropdown {
-      display: unset; } }
+    header .nav-movil {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center; } }
 
 @media screen and (max-width: 1029px) {
   footer .footer {

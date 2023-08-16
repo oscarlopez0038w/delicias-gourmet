@@ -1,0 +1,22 @@
+$color-header-footer: #FFFACD;
+$color-hr:#84b6f4;
+$color-a:black;
+$color-hover:#FFB6C1;
+$color-span: #008866;
+$color-background-form:#87CEFA; 
+$color-basic-letter:white;
+$color-form-letter: grey;
+
+@mixin flexbox ($flex,$direction,$justify,$align) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid ($grid,$justify,$align,$content) {
+    display: $grid;
+    justify-items: $justify;
+    align-items: $align;
+    align-content: $content;
+}
