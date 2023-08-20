@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Pompiere&display=swap");
 * {
   margin: 0;
@@ -51,15 +52,13 @@ header {
           padding: 10px;
           font-size: 20px;
           color: black; }
+          header .nav_desk ul li a:hover {
+            color: #008866;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: 0.5s; }
   header .nav-movil {
     display: none; }
-    header .nav-movil ul li {
-      list-style: none; }
-      header .nav-movil ul li a {
-        text-decoration: none;
-        padding: 10px;
-        font-size: 20px;
-        color: black; }
 
 main h1 {
   text-align: center;
@@ -96,7 +95,8 @@ main .tarjetas {
     border: 1px solid black; }
     main .tarjetas a:hover {
       background-color: #FFB6C1;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: 0.8s; }
 
 main .espaciado {
   text-align: center;
@@ -116,6 +116,7 @@ main .espaciado {
 main .formulario {
   width: 100%;
   max-width: 500px;
+  min-height: 550px;
   margin: 5px auto;
   display: flex;
   flex-direction: column;
@@ -124,13 +125,18 @@ main .formulario {
   padding: 5px;
   background-color: #87CEFA;
   border-radius: 10px; }
-  main .formulario form .textinput {
-    float: left;
-    width: 100%;
-    min-height: 75px;
-    outline: none;
-    resize: none;
-    border: 1px solid grey; }
+  main .formulario h3 {
+    font-size: 24px;
+    text-shadow: 2px 2px 2px rgba(10, 0, 0, 0.3); }
+  main .formulario form {
+    font-size: 24px; }
+    main .formulario form .textinput {
+      float: left;
+      width: 100%;
+      min-height: 75px;
+      outline: none;
+      resize: none;
+      border: 1px solid grey; }
 
 main .parallax {
   width: 100%;
@@ -145,17 +151,19 @@ main .parallax {
     justify-content: space-around;
     align-items: center; }
     main .parallax .historia .presentacion {
-      width: 45%;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      width: 70%;
       padding: 10px;
       color: white;
       line-height: 2rem;
-      font-size: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
+      main .parallax .historia .presentacion p {
+        font-size: 22px; }
       main .parallax .historia .presentacion img {
-        width: 40%;
+        width: 250px;
         border-radius: 15px; }
 
 main .grid {
@@ -194,7 +202,8 @@ main .grid {
       margin: 5px; }
       main .grid .contenedor .boton_compra:hover {
         background-color: #FFB6C1;
-        font-weight: 700; }
+        font-weight: 700;
+        transition: 0.8s; }
 
 main .container {
   display: grid;
@@ -210,7 +219,20 @@ main .container {
     main .container .row div img {
       width: 70%;
       height: 150px;
-      margin: 5px; }
+      margin: 5px;
+      border-radius: 5px; }
+    main .container .row div a {
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      border-radius: 5px;
+      padding: 5px;
+      border: 1px solid black;
+      margin: 10px; }
+      main .container .row div a:hover {
+        background-color: #FFB6C1;
+        font-weight: 700;
+        transition: 0.8s; }
 
 footer {
   background-color: #FFFACD; }
@@ -242,15 +264,44 @@ footer {
 
 @media screen and (max-width: 632px) {
   header {
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center; }
     header .nav_desk {
       display: none; }
     header .nav-movil {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      align-content: center; } }
+      position: relative;
+      display: inline-block; }
+      header .nav-movil:hover .dropdown-content {
+        max-height: 200px;
+        /* Ajusta la altura máxima según tu contenido */
+        opacity: 1;
+        visibility: visible; }
+    header .dropbtn {
+      background-color: #84b6f4;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer; }
+    header .dropdown-content {
+      display: block;
+      max-height: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 120px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease; }
+      header .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 3px; } }
 
 @media screen and (max-width: 1029px) {
   footer .footer {

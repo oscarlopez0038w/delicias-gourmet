@@ -11,7 +11,6 @@ header {
     }
     .nav_desk {
         @include flexbox (flex,row,center,center);
-
         ul{
             @include flexbox (flex,row,center,center);
             margin: 0;
@@ -22,22 +21,17 @@ header {
                     padding: 10px;
                     font-size: 20px;
                     color: $color-a;
+                    &:hover{
+                        color: $color-span;
+                        border-radius: 10px;;
+                        font-weight: 700;
+                        transition: 0.5s;
+                    }
                 }
             }
         }
     }
     .nav-movil{
-        display: none; 
-        ul{
-            li{
-                list-style: none;
-                a{
-                    text-decoration: none;
-                    padding: 10px;
-                    font-size: 20px;
-                    color: $color-a;  
-                }
-            }
-        }
+        display: none;
     }
 }  
