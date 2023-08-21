@@ -13,6 +13,7 @@
         content="Pasteles decorados,Pasteles personalizados,Repostería artesanal,Comidas gourmet,Postres exclusivos,Delicias dulces y saladas,Pasteles para ocasiones especiales,Repostería única,Entrega de pasteles a domicilio,Sabores de lujo,Pastelería de alta calidad,Tortas exquisitas,Repostería creativa,Pasteles temáticos,Sabores sofisticados,Bocadillos gourmet,Experiencias gastronómicas,Pasteles elaborados a mano">
     <meta property="og:type" content="E-commerce">
     <meta property="og:title" content="Delicias Gourmet | Contacto">
+    <meta property="og:url" content="https://pasteleriamerlen.netlify.app/">
     <meta property="og:description"
         content="Ordena pasteles decorados, repostería artesanal y comidas gourmet de la más alta calidad para tus ocasiones especiales. Completa nuestro formulario y disfruta de sabores exclusivos que transformarán tus celebraciones en experiencias inolvidables.">
     <meta property="og:image" content="https://oscarlopez0038w.github.io/delicias-gourmet/img/logo.png">
@@ -50,44 +51,46 @@
     </header>
     <hr />
     <main>
-        <div class="formulario">
-            <h3>Contacto</h3>
-            <form action="#">
+        <section class="registro">
+            <div class="formulario">
+                <h3>Contacto</h3>
+                <form action="#">
 
-                <label for="nombres">Nombres:
-                    <input type="text" name="nombres" placeholder="Ej:Oscar Manuel "> <br>
-                </label><br>
+                    <label for="nombres">Nombres:
+                        <input type="text" name="nombres" placeholder="Ej:Oscar Manuel "> <br>
+                    </label><br>
 
-                <label for="apellidos">Apellido:
-                    <input type="text" name="apellido" placeholder="Ej:López Mojica"><br>
-                </label><br>
+                    <label for="apellidos">Apellido:
+                        <input type="text" name="apellido" placeholder="Ej:López Mojica"><br>
+                    </label><br>
 
-                <label for="correo">E-mail:
-                    <input type="text" name="correo" placeholder="Ej:lopezoscarmanolo@gmail.com"><br>
-                </label><br>
+                    <label for="correo">E-mail:
+                        <input type="text" name="correo" placeholder="Ej:lopezoscarmanolo@gmail.com"><br>
+                    </label><br>
 
-                <label for="edad">Edad:
-                    <input type="number" name="edad" placeholder="Edad"><br>
-                </label><br>
+                    <label for="edad">Edad:
+                        <input type="number" name="edad" placeholder="Edad"><br>
+                    </label><br>
 
-                <textarea class="textinput" placeholder="Comentarios"></textarea><br>
+                    <textarea class="textinput" placeholder="Comentarios"></textarea><br>
 
-                <fieldset class="calificacion">
+                    <fieldset class="calificacion">
 
-                    <legend>¿Como calificas la pagina?<abbr title="Este campo es obligatorio" aria-label="required">
-                            *</abbr>
-                    </legend>
+                        <legend>¿Como calificas la pagina?<abbr title="Este campo es obligatorio" aria-label="required">
+                                *</abbr>
+                        </legend>
+                        <br>
+                        <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Excelente</label>
+                        <input type="radio" required name="driver" id="r2" value="no"><label for="r2">Buena</label>
+                        <input type="radio" required name="driver" id="r2" value="no"><label for="r2">Regular</label>
+                        <input type="radio" required name="driver" id="r2" value="no"><label for="r2">Mala</label>
+                    </fieldset>
                     <br>
-                    <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Excelente</label>
-                    <input type="radio" required name="driver" id="r2" value="no"><label for="r2">Buena</label>
-                    <input type="radio" required name="driver" id="r2" value="no"><label for="r2">Regular</label>
-                    <input type="radio" required name="driver" id="r2" value="no"><label for="r2">Mala</label>
-                </fieldset>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Resetear">
-            </form>
-        </div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear">
+                </form>
+            </div>
+        </section>
     </main>
     <hr />
     <footer>

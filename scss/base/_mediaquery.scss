@@ -1,4 +1,4 @@
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {// CON ESTA MEDIA QUERY HAGO QUE EN LA LANDING DE PASTELES Y REPOSTERIAS PASEN A UNA SOLA COLUMNA//
     main {
         .tarjetas {
             .productos {
@@ -10,7 +10,7 @@
     }
 }
 
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 632px) {// APARECE EL NAV-MOVIL//
     header {
         justify-content: space-around;
         align-items: center;
@@ -62,7 +62,7 @@
     }
 }
 
-@media screen and (max-width: 1029px) {
+@media screen and (max-width: 1029px) {// AJUSTA EL FOOTER PASANDO LAS REDES AL FINAL //
     footer {
         .footer {
             display: flex;
@@ -78,7 +78,7 @@
     }
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1070px) {// AJUSTA LA GRILLA A DOS COLUMNAS//
     main {
         .grid {
             display: grid;
@@ -88,7 +88,7 @@
     }
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 710px) {//AJUSTA LA GRILLA A UNA SOLA COLUMNA //
     main {
         .grid{
             display: grid;
@@ -98,7 +98,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {//CON ESTA MEDIA AJUSTA LOS MARGENES DE ARRIBA Y ABAJO DE LAS TARJETAS AL PASAR UNA ABAJO PARA QUE NO SE JUNTEN //
     main {
         .tarjetas {
             .productos {

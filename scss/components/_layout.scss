@@ -1,36 +1,44 @@
+// AQUI ESTAMOS EN EL MAIN DE INDEX//
 main {
-    h1 {
-        text-align: center;
-        padding: 25px;
-    }
-    .tarjetas{
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        .productos{
-            @include flexbox (flex,column,center,center);
-            width: 400px;
-            height: 400px;
-            border: 1px solid $color-a;
-            border-radius: 5px;
-            box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
-            -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
-            -moz-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
+    .home {
+        // Este es el titulo principal//
+        h1 {
+            text-align: center;
+            padding: 25px;
         }
-            img{
+        // Codigo para que las tarjetas de presentacion de los tres tipos de platos se muestren horizontal //
+        .tarjetas {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            // Con esta clase modifico las caracteristicas de cada una de las tarjetas de presentacion//
+            .productos {
+                @include flexbox (flex, column, center, center);// con este mixin aplico flexbox //
+                width: 400px;
+                height: 400px;
+                border: 1px solid $color-a;
+                border-radius: 5px;
+                box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
+                -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
+                -moz-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
+            }
+            // este es el codigo para modificar la imagen de cada tipo de plato//
+            img {
                 width: 100%;
                 height: 80%;
             }
-            a{
+            // Aqui modifico el aspecto visual del boton que enlaza cada uno de los platos con su respectiva landing//
+            a {
                 text-decoration: none;
                 color: $color-a;
                 font-weight: 700;
                 border-radius: 5px;
                 padding: 5px;
                 border: 1px solid $color-a;
+                // Para darle color al boton//
                 &:hover {
                     background-color: $color-hover;
                     font-weight: 700;
@@ -38,145 +46,178 @@ main {
                 }
             }
         }
-    .espaciado {
-        text-align: center;
-         margin-top: 2%;
-        .espaciado_contacto {
-            padding: 25px;
-            .escribenos {
-                color: $color-span;
-                font-size: 35px;
-                text-decoration: none;
-            }
-            span {
-                text-align: center;
-                font-size: 35px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            } 
-        }
     }
-    .formulario{
-        width: 100%;
-        max-width: 500px;
-        min-height: 550px;
-        margin: 5px auto;
-        @include flexbox (flex,column,center,center);
-        padding: 5px;
-        background-color: $color-background-form;
-        border-radius: 10px;
-        h3{
-            font-size:24px;
-            text-shadow: 2px 2px 2px rgba(10, 0, 0, 0.3);
-        }
-        form{
-            font-size:24px;
-            .textinput{
-                float: left;
-                width: 100%;
-                min-height: 75px;
-                outline: none;
-                resize: none;
-                border: 1px solid $color-form-letter;
-            }
-        }
-    }
-    .parallax {
-        width: 100%;
-        background-image: url(../img/pastelera.jpeg);
-        background-attachment: fixed;
-        background-position: revert;
-        background-repeat: no-repeat;
-        background-size: cover;
-        .historia{
-            @include flexbox (flex,row,space-around,center);
-            .presentacion{
-                p{
-                    font-size: 22px
+//AQUI INICIA LA PARTE PARA QUE LOS CLIENTES SE REGISTREN Y PUEDAN HACER SU SOLICITUD DE PASTEL DESEADO //
+    .pastel-exclusivo {
+        .espaciado {
+            text-align: center;
+            margin-top: 2%;
+
+            .espaciado_contacto {
+                padding: 25px;
+
+                .escribenos {
+                    color: $color-span;
+                    font-size: 35px;
+                    text-decoration: none;
                 }
-                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-                width: 70%;
-                padding: 10px;
-                color: $color-basic-letter;
-                line-height: 2rem;
-                @include flexbox (flex,column,center,center);
-                img{
-                    width: 250px;
-                    border-radius: 15px;
+
+                span {
+                    text-align: center;
+                    font-size: 35px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
                 }
             }
         }
     }
-    .grid{
-        @include grid (grid,center,center,center);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 5px;
-        row-gap: 15px;
-        justify-content: center;
-        padding: 10px;
-        .contenedor{
-            width: 350px;
-            height: 300px;
-            @include flexbox (flex,column,center,center);
-            border: 1px solid $color-a;
-            border-radius: 5px;
-            box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
-            -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
-            -moz-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
-            img{
-                width: 80%;
-                height: 60%;
+// SECCION DEL FORMULARIO| LANDING DE CONTACTO//
+    .registro {
+        .formulario {
+            width: 100%;
+            max-width: 500px;
+            min-height: 550px;
+            margin: 5px auto;
+            @include flexbox (flex, column, center, center);
+            padding: 5px;
+            background-color: $color-background-form;
+            border-radius: 10px;
+
+            h3 {
+                font-size: 24px;
+                text-shadow: 2px 2px 2px rgba(10, 0, 0, 0.3);
             }
-            .boton_compra{
-                text-decoration: none;
-                color: black;
-                font-weight: 700;
-                border-radius: 5px;
-                padding: 5px;
-                border: 1px solid $color-a;
-                margin: 5px;
-                &:hover{
-                    background-color: $color-hover;
-                    font-weight: 700;
-                    transition: 0.8s;
+
+            form {
+                font-size: 24px;
+
+                .textinput {
+                    float: left;
+                    width: 100%;
+                    min-height: 75px;
+                    outline: none;
+                    resize: none;
+                    border: 1px solid $color-form-letter;
                 }
             }
         }
     }
-    .container {
-        display: grid;
-        row-gap: 15px;
-        margin: 15px auto;
-        
-        .row {
-            div {
-                margin: 0;
+// SECCION DE HISTORIA EN LANDING DE "NOSOTROS"//
+    .nosotros {
+        // CON ESTE CODE, PONEMOS DE FONDO LA FOTO DE UNA MUCHACHA MIENTRAS PODEMOS HACER SCROLL Y LEER//
+        .parallax {
+            width: 100%;
+            background-image: url(../img/pastelera.jpeg);
+            background-attachment: fixed;
+            background-position: revert;
+            background-repeat: no-repeat;
+            background-size: cover;
+            //CON LA CLASE HISTORIA LO QUE HAGO ES CENTRAR EL CONTENIDO //
+            .historia {
+                @include flexbox (flex, row, space-around, center);
+                // CODIGO PARA DISTRIBUIR LOS TEXTOS Y LA IMAGEN//
+                .presentacion {
+                    p {
+                        font-size: 22px
+                    }
+
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+                    width: 70%;
+                    padding: 10px;
+                    color: $color-basic-letter;
+                    line-height: 2rem;
+                    @include flexbox (flex, column, center, center);
+
+                    img {
+                        width: 250px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+// CODIGO PARA HACER UNA GRILLA DE 9 ELEMENTOS, LANDING PASTELES Y REPOSTERIA//
+    .galeria {
+        .grid {
+            @include grid (grid, center, center, center);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5px;
+            row-gap: 15px;
+            justify-content: center;
+            padding: 10px;
+            // ESTILOS DE CADA UNO DE LOS ELEMENTOS DE LA GRILLA //
+            .contenedor {
+                width: 350px;
+                height: 300px;
+                @include flexbox (flex, column, center, center);
                 border: 1px solid $color-a;
                 border-radius: 5px;
                 box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
                 -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
-                 -moz-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
-        
+                -moz-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
+                // ESTILOS DE LA IMAGEN//
                 img {
-                    width: 70%;
-                    height: 150px;
-                    margin: 5px;
-                    border-radius: 5px;
+                    width: 80%;
+                    height: 60%;
                 }
-                a{
+                // ESTILOS DEL BOTON COMPRAR//
+                .boton_compra {
                     text-decoration: none;
                     color: black;
                     font-weight: 700;
                     border-radius: 5px;
                     padding: 5px;
                     border: 1px solid $color-a;
-                    margin: 10px;
-                    &:hover{
+                    margin: 5px;
+
+                    &:hover {
                         background-color: $color-hover;
                         font-weight: 700;
                         transition: 0.8s;
-                
+                    }
+                }
+            }
+        }
+    }
+// GRILLA, LANDING GOURMET, ENLAZADA CON BOOTSTRAP//
+    .gourmet {
+        .container {
+            display: grid;
+            row-gap: 15px;
+            margin: 15px auto;
+
+            .row {
+                div {
+                    margin: 0;
+                    border: 1px solid $color-a;
+                    border-radius: 5px;
+                    box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
+                    -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
+                    -moz-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
+
+                    img {
+                        width: 70%;
+                        height: 150px;
+                        margin: 5px;
+                        border-radius: 5px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 700;
+                        border-radius: 5px;
+                        padding: 5px;
+                        border: 1px solid $color-a;
+                        margin: 10px;
+
+                        &:hover {
+                            background-color: $color-hover;// VARIABLE PARA COLOR//
+                            font-weight: 700;
+                            transition: 0.8s;
+
+                        }
                     }
                 }
             }

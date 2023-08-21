@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
 
-* {
+* {// APLICADO A TODO EL CODIGO PARA NO TENER MARGENES Y AJUSTAR LOS ELEMENTOS//
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body {
+html,body {// APLCIADO A TODO EL CUERPO PARA DISTRIBUR LOS ELEMENTOS //
     display: flex;
     flex-direction: column;
     font-family: 'Pompiere', cursive;
     font-weight: 900;
 }
 
-.fijo {
+.fijo {// ESTILOS DEL BOTON WHATSAPP//
     position: fixed;
     bottom: 120px;
     right: 20px;
-    img{
+    img{// IMAGEN DEL WHATSAPP//
         width: 50px;
     height: 5 0px;
     border-radius: 50%;
@@ -25,7 +25,7 @@ html,body {
     }
 }
 
-hr{
+hr{// BARRA DIVISORIA QUE ENMARCA EL MAIN DE TODOS LOS DOC.HTML//
     height: 4px !important;
     background-color: #84b6f4;
     margin: 0;

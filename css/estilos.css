@@ -60,18 +60,18 @@ header {
   header .nav-movil {
     display: none; }
 
-main h1 {
+main .home h1 {
   text-align: center;
   padding: 25px; }
 
-main .tarjetas {
+main .home .tarjetas {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center; }
-  main .tarjetas .productos {
+  main .home .tarjetas .productos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,37 +83,37 @@ main .tarjetas {
     box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
     -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
     -moz-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84); }
-  main .tarjetas img {
+  main .home .tarjetas img {
     width: 100%;
     height: 80%; }
-  main .tarjetas a {
+  main .home .tarjetas a {
     text-decoration: none;
     color: black;
     font-weight: 700;
     border-radius: 5px;
     padding: 5px;
     border: 1px solid black; }
-    main .tarjetas a:hover {
+    main .home .tarjetas a:hover {
       background-color: #FFB6C1;
       font-weight: 700;
       transition: 0.8s; }
 
-main .espaciado {
+main .pastel-exclusivo .espaciado {
   text-align: center;
   margin-top: 2%; }
-  main .espaciado .espaciado_contacto {
+  main .pastel-exclusivo .espaciado .espaciado_contacto {
     padding: 25px; }
-    main .espaciado .espaciado_contacto .escribenos {
+    main .pastel-exclusivo .espaciado .espaciado_contacto .escribenos {
       color: #008866;
       font-size: 35px;
       text-decoration: none; }
-    main .espaciado .espaciado_contacto span {
+    main .pastel-exclusivo .espaciado .espaciado_contacto span {
       text-align: center;
       font-size: 35px;
       margin-top: 20px;
       margin-bottom: 20px; }
 
-main .formulario {
+main .registro .formulario {
   width: 100%;
   max-width: 500px;
   min-height: 550px;
@@ -125,12 +125,12 @@ main .formulario {
   padding: 5px;
   background-color: #87CEFA;
   border-radius: 10px; }
-  main .formulario h3 {
+  main .registro .formulario h3 {
     font-size: 24px;
     text-shadow: 2px 2px 2px rgba(10, 0, 0, 0.3); }
-  main .formulario form {
+  main .registro .formulario form {
     font-size: 24px; }
-    main .formulario form .textinput {
+    main .registro .formulario form .textinput {
       float: left;
       width: 100%;
       min-height: 75px;
@@ -138,19 +138,19 @@ main .formulario {
       resize: none;
       border: 1px solid grey; }
 
-main .parallax {
+main .nosotros .parallax {
   width: 100%;
   background-image: url(../img/pastelera.jpeg);
   background-attachment: fixed;
   background-position: revert;
   background-repeat: no-repeat;
   background-size: cover; }
-  main .parallax .historia {
+  main .nosotros .parallax .historia {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
-    main .parallax .historia .presentacion {
+    main .nosotros .parallax .historia .presentacion {
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
       width: 70%;
       padding: 10px;
@@ -160,13 +160,13 @@ main .parallax {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      main .parallax .historia .presentacion p {
+      main .nosotros .parallax .historia .presentacion p {
         font-size: 22px; }
-      main .parallax .historia .presentacion img {
+      main .nosotros .parallax .historia .presentacion img {
         width: 250px;
         border-radius: 15px; }
 
-main .grid {
+main .galeria .grid {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -177,7 +177,7 @@ main .grid {
   row-gap: 15px;
   justify-content: center;
   padding: 10px; }
-  main .grid .contenedor {
+  main .galeria .grid .contenedor {
     width: 350px;
     height: 300px;
     display: flex;
@@ -189,10 +189,10 @@ main .grid {
     box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
     -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
     -moz-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84); }
-    main .grid .contenedor img {
+    main .galeria .grid .contenedor img {
       width: 80%;
       height: 60%; }
-    main .grid .contenedor .boton_compra {
+    main .galeria .grid .contenedor .boton_compra {
       text-decoration: none;
       color: black;
       font-weight: 700;
@@ -200,28 +200,28 @@ main .grid {
       padding: 5px;
       border: 1px solid black;
       margin: 5px; }
-      main .grid .contenedor .boton_compra:hover {
+      main .galeria .grid .contenedor .boton_compra:hover {
         background-color: #FFB6C1;
         font-weight: 700;
         transition: 0.8s; }
 
-main .container {
+main .gourmet .container {
   display: grid;
   row-gap: 15px;
   margin: 15px auto; }
-  main .container .row div {
+  main .gourmet .container .row div {
     margin: 0;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
     -webkit-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84);
     -moz-box-shadow: 5px 10px 10px -1px rgba(0, 0, 0, 0.84); }
-    main .container .row div img {
+    main .gourmet .container .row div img {
       width: 70%;
       height: 150px;
       margin: 5px;
       border-radius: 5px; }
-    main .container .row div a {
+    main .gourmet .container .row div a {
       text-decoration: none;
       color: black;
       font-weight: 700;
@@ -229,7 +229,7 @@ main .container {
       padding: 5px;
       border: 1px solid black;
       margin: 10px; }
-      main .container .row div a:hover {
+      main .gourmet .container .row div a:hover {
         background-color: #FFB6C1;
         font-weight: 700;
         transition: 0.8s; }
@@ -325,7 +325,7 @@ footer {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   main .tarjetas .productos {
     margin-top: 10px;
     margin-bottom: 10px;

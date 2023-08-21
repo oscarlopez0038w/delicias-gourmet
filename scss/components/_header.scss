@@ -1,15 +1,15 @@
-header {
+header {// ESTILOS PARA AJUSTAR LOS ELEMENTOS DEL HEADER//
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: $color-header-footer;
     div{    
-        img{
+        img{//LOGO DE LA PAGINA //
             width:100px; 
             height:100px;
         }
     }
-    .nav_desk {
+    .nav_desk {//ESTILO PARA LA BARRA DE NAVEGACION //
         @include flexbox (flex,row,center,center);
         ul{
             @include flexbox (flex,row,center,center);
@@ -31,7 +31,7 @@ header {
             }
         }
     }
-    .nav-movil{
+    .nav-movil{// EL NAV DEL MOVIL APARECE CON LA MEDIA QUERY//
         display: none;
     }
 }  
