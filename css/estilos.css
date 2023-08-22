@@ -314,13 +314,13 @@ footer {
     margin: 10px 0; } }
 
 @media screen and (max-width: 1070px) {
-  main .grid {
+  main .galeria .grid {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 710px) {
-  main .grid {
+  main .galeria .grid {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr; } }

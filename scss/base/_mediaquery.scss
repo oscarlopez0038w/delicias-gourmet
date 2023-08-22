@@ -80,20 +80,24 @@
 
 @media screen and (max-width: 1070px) {// AJUSTA LA GRILLA A DOS COLUMNAS//
     main {
-        .grid {
-            display: grid;
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: repeat(2, 1fr);
+        .galeria{
+            .grid {
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     }
 }
 
 @media screen and (max-width: 710px) {//AJUSTA LA GRILLA A UNA SOLA COLUMNA //
     main {
-        .grid{
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr;
+        .galeria{
+            .grid{
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr;
+            }
         }
     }
 }
